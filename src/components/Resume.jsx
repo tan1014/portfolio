@@ -44,47 +44,25 @@ const Resume = () => {
 
   const resumeSections = [
     {
-      title: "Experience",
-      items: [
-        {
-          title: "Senior Full Stack Developer",
-          company: "Tech Company",
-          period: "2022 - Present",
-          description: "Led development of scalable web applications, mentored junior developers, and implemented best practices."
-        },
-        {
-          title: "Full Stack Developer",
-          company: "StartupXYZ",
-          period: "2020 - 2022",
-          description: "Developed and maintained multiple client projects using React, Node.js, and cloud technologies."
-        }
-      ]
-    },
-    {
       title: "Education",
       items: [
         {
-          title: "Bachelor of Technology in Computer Science",
-          company: "University Name",
-          period: "2016 - 2020",
-          description: "GPA: 8.5/10.0 | Relevant coursework: Data Structures, Algorithms, Web Development, Database Systems"
-        }
-      ]
-    },
-    {
-      title: "Certifications",
-      items: [
-        {
-          title: "AWS Certified Solutions Architect",
-          company: "Amazon Web Services",
-          period: "2023",
-          description: "Professional level certification in cloud architecture and deployment."
+          title: "B.Tech in Computer Science Engineering",
+          company: "Lovely Professional University",
+          period: "2023 – Present",
+          description: "Current CGPA: 6.9"
         },
         {
-          title: "Google Cloud Professional Developer",
-          company: "Google Cloud",
-          period: "2022",
-          description: "Expertise in developing scalable applications on Google Cloud Platform."
+          title: "Intermediate (PCM)",
+          company: "RNS Inter College",
+          period: "2019 – 2021",
+          description: "Percentage: 75%"
+        },
+        {
+          title: "10th Grade",
+          company: "DAV Public School",
+          period: "Completed in 2019",
+          description: "Percentage: 80%"
         }
       ]
     }
@@ -106,7 +84,7 @@ const Resume = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Resume & <span className="gradient-text">Experience</span>
+              Resume & <span className="gradient-text">Education</span>
             </h2>
             <div className="w-20 h-1 bg-primary-600 mx-auto rounded-full"></div>
           </motion.div>
@@ -167,7 +145,7 @@ const Resume = () => {
           </motion.div>
 
           {/* Resume Sections */}
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="max-w-2xl mx-auto">
             {resumeSections.map((section) => (
               <motion.div
                 key={section.title}
